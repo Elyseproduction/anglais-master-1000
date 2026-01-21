@@ -1,0 +1,94 @@
+:root {
+    --primary: #3498db;
+    --accent: #2ecc71;
+    --dark: #2c3e50;
+    --bg: #f0f4f8;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg);
+    margin: 0;
+    color: var(--dark);
+}
+
+.main-header {
+    background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=800&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 0 0 30px 30px;
+}
+
+.search-box input {
+    width: 80%;
+    max-width: 500px;
+    padding: 15px 25px;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.category-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 20px;
+}
+
+.btn-cat {
+    background: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.btn-cat:hover, .btn-cat.active {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.dictionary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.word-card {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-bottom: 4px solid #eee;
+}
+
+.word-card:hover {
+    transform: scale(1.05);
+    border-bottom-color: var(--accent);
+}
+
+.word-img {
+    font-size: 3rem; /* Utilisation d'emojis comme images */
+    margin-bottom: 10px;
+    display: block;
+}
+
+.en { font-weight: bold; font-size: 1.2rem; color: var(--primary); display: block; }
+.fr { font-size: 0.9rem; color: #7f8c8d; }
+
+.site-footer { text-align: center; padding: 40px; color: #95a5a6; }
